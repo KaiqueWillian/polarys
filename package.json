@@ -1,0 +1,32 @@
+{
+  "name": "polarys",
+  "version": "1.0.0",
+  "packageManager": "pnpm@9.12.0",
+  "description": "SaaS moderno para gestão financeira de MEIs",
+  "private": true,
+  "workspaces": ["apps/*", "packages/*"],
+  "scripts": {
+    "dev": "turbo run dev --parallel",
+    "build": "turbo run build",
+    "lint": "turbo run lint",
+    "format": "prettier --write .",
+    "db:up": "docker compose up -d",
+    "db:down": "docker compose down -v"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KaiqueWillian/polarys.git"
+  },
+  "keywords": ["MEI", "finanças", "SaaS", "Next.js", "NestJS", "Prisma"],
+  "author": "Kaique Willian",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/KaiqueWillian/polarys/issues"
+  },
+  "homepage": "https://github.com/KaiqueWillian/polarys#readme",
+  "devDependencies": {
+    "turbo": "latest",
+    "typescript": "^5.9.3",
+    "prettier": "^3.2.0"
+  }
+}
